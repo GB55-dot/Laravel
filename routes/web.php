@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ChirpController;
 
-Route::get('/hello', function () {
-    return ('Hello World');
-});
+Route::get('/', [ChirpController::class, 'index']);
